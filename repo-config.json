@@ -1,16 +1,17 @@
 {
   "scanSettings": {
-    "enableLicenseViolations": true
-    "enableReachability": true
     "configMode": "AUTO",
     "configExternalURL": "",
-    "baseBranches": []
-   },
+    "baseBranches": [],
+    "enableLicenseViolations": true,
+    "enableReachability": true
+  },
   "imageSettings": {
     "imageTracing": {
         "enableImageTracingPR": true,
         "addDockerfilePath": true,
         "addRepositoryCoordinates": true
+    }
   },
   "scanSettingsSAST": {
     "enableScan": true,
@@ -20,10 +21,10 @@
     "snippetSize": 10
   },
   "checkRunSettings": {
-    "strictMode": "warning"
     "vulnerableCheckRunConclusionLevel": "failure",
     "displayMode": "diff",
-    "useMendCheckNames": true
+    "useMendCheckNames": true,
+    "strictMode": "warning"
   },
   "checkRunSettingsSAST": {
     "checkRunConclusionLevel": "failure",
@@ -43,6 +44,5 @@
        "github>whitesource/merge-confidence:beta",
        "github>mend-toolkit/mend-examples//Repo-Integration/Renovate/smart-merge"
       ]
-    }
   }
 }
